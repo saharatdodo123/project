@@ -25,7 +25,8 @@
                       - <?php echo $item->favorite_job2 ?><br>
                       - <?php echo $item->favorite_job3 ?><br>
                       - <?php echo $item->favorite_job4 ?><br>
-                      - <?php echo $item->favorite_job5 ?>
+                      - <?php echo $item->favorite_job5 ?><br>
+                      - <?php echo $item->favorite_job6 ?>
                       </p>
                       <form action="./contract" method="POST">
                         <input class="btn btn-primary" type="text" name="ptg_id" value="<?php echo $item->ptg_id ?>" hidden>

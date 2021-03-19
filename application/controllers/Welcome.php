@@ -301,6 +301,9 @@ class Welcome extends CI_Controller {
 		$ptg_id = $this->session->userdata['ptg_id'];
 		$data['query'] = $this->project->showphotographered($ptg_id);
 		$data['query2'] = $this->project->showphotographered2($ptg_id);
+		echo "<script language='JavaScript'>";
+        echo "alert('แก้ไขสำเสร็จ')";
+        echo "</script>";
 		$this->load->view('header_ptg');
 		$this->load->view('home_ptg', $data);
 		$this->load->view('footer_ptg');
@@ -332,6 +335,9 @@ class Welcome extends CI_Controller {
 		$ptg_id = $this->session->userdata['ptg_id'];
 		$data['query'] = $this->project->showphotographered($ptg_id);
 		$data['query2'] = $this->project->showphotographered2($ptg_id);
+		echo "<script language='JavaScript'>";
+        echo "alert('แก้ไขสำเสร็จ')";
+        echo "</script>";
 		$this->load->view('header_ptg');
 		$this->load->view('home_ptg', $data);
 		$this->load->view('footer_ptg');
@@ -364,6 +370,9 @@ class Welcome extends CI_Controller {
 		$ptg_id = $this->session->userdata['ptg_id'];
 		$data['query'] = $this->project->showphotographered($ptg_id);
 		$data['query2'] = $this->project->showphotographered2($ptg_id);
+		echo "<script language='JavaScript'>";
+        echo "alert('แก้ไขสำเสร็จ')";
+        echo "</script>";
 		$this->load->view('header_ptg');
 		$this->load->view('home_ptg', $data);
 		$this->load->view('footer_ptg');
@@ -402,6 +411,9 @@ class Welcome extends CI_Controller {
 		$ptg_id = $this->session->userdata['ptg_id'];
 		$data['query'] = $this->project->showphotographered($ptg_id);
 		$data['query2'] = $this->project->showphotographered2($ptg_id);
+		echo "<script language='JavaScript'>";
+        echo "alert('แก้ไขสำเสร็จ')";
+        echo "</script>";
 		$this->load->view('header_ptg');
 		$this->load->view('home_ptg', $data);
 		$this->load->view('footer_ptg');
@@ -461,6 +473,9 @@ class Welcome extends CI_Controller {
 		$this->project->contract($contract_employment);
 		$cus_id = $this->session->userdata['cus_id'];
 		$data['query'] = $this->project->getcontract($cus_id);
+		echo "<script language='JavaScript'>";
+        echo "alert('ทำรายการสำเสร็จ')";
+        echo "</script>";
 		$this->load->view('header_cus');
 		$this->load->view('history', $data);
 		$this->load->view('footer');
@@ -511,6 +526,9 @@ class Welcome extends CI_Controller {
 		$data['query'] = $this->project->edit_contract_success($status, $cm_id);
 		$ptg_id = $this->session->userdata['ptg_id'];
 		$data['query'] = $this->project->getcontract_ptg($ptg_id);
+		echo "<script language='JavaScript'>";
+        echo "alert('ยืนยันการทำสัญญา')";
+        echo "</script>";
 		$this->load->view('header_ptg');
 		$this->load->view('history_success_ptg', $data);
 		$this->load->view('footer');
@@ -527,6 +545,9 @@ class Welcome extends CI_Controller {
 		$data['query'] = $this->project->edit_contract_success($status, $cm_id);
 		$ptg_id = $this->session->userdata['ptg_id'];
 		$data['query'] = $this->project->getcontract_ptg($ptg_id);
+		echo "<script language='JavaScript'>";
+        echo "alert('ยืนยันการชำระเงิน')";
+        echo "</script>";
 		$this->load->view('header_ptg');
 		$this->load->view('history_paymentsuccess_ptg', $data);
 		$this->load->view('footer');
@@ -541,6 +562,9 @@ class Welcome extends CI_Controller {
         echo "</script>";
 		$cus_id = $this->session->userdata['cus_id'];
 		$data['query'] = $this->project->getcontract($cus_id);
+		echo "<script language='JavaScript'>";
+        echo "alert('ปฏิเสธสัญญา')";
+        echo "</script>";
 		$this->load->view('header_cus');
 		$this->load->view('history', $data);
 		$this->load->view('footer');
@@ -607,6 +631,9 @@ class Welcome extends CI_Controller {
                 $array = json_decode(json_encode($check['data']), true);
                 $this->session->set_userdata($array[0]);
                 //$data['query'] = $this->ffc->showuser_admin();
+				echo "<script language='JavaScript'>";
+                echo "alert('ล็อกอินสำเสร็จ')";
+                echo "</script>";
 				$this->load->view('header_cus');
                 $this->load->view('home_cus');
 				$this->load->view('footer');
@@ -636,6 +663,9 @@ class Welcome extends CI_Controller {
 				$ptg_id = $this->session->userdata['ptg_id'];
 				$data['query'] = $this->project->showphotographered($ptg_id);
 				$data['query2'] = $this->project->showphotographered2($ptg_id);
+				echo "<script language='JavaScript'>";
+                echo "alert('ล็อกอินสำเสร็จ')";
+                echo "</script>";
 				$this->load->view('header_ptg');
                 $this->load->view('home_ptg', $data);
 				$this->load->view('footer_ptg');
@@ -655,6 +685,9 @@ class Welcome extends CI_Controller {
 	public function logout()
 	{
 		$this->session->sess_destroy();
+		echo "<script language='JavaScript'>";
+        echo "alert('ออกจากระบบ')";
+        echo "</script>";
 		$this->load->view('header');
 		$this->load->view('home');
 		$this->load->view('footer');
@@ -665,6 +698,7 @@ class Welcome extends CI_Controller {
 		$data = array(
 			'cus_firstname' => $this->input->post("cus_firstname"),
 			'cus_lastname' => $this->input->post("cus_lastname"),
+			'cus_sex' => $this->input->post("cus_sex"),
 			'cus_email' => $this->input->post("cus_email"),
             'cus_password' => $this->input->post("cus_password"),
 			'cus_phone' => $this->input->post("cus_phone")
@@ -677,6 +711,9 @@ class Welcome extends CI_Controller {
 			'cus_postal_code' => $this->input->post("cus_postal_code"),
 		);
 		$this->project->register($data, $data2);
+		echo "<script language='JavaScript'>";
+        echo "alert('ลงทะเบียนสำเสร็จ')";
+        echo "</script>";
 		$this->load->view('header');
 		$this->load->view('login');
 		$this->load->view('footer');
@@ -731,6 +768,9 @@ class Welcome extends CI_Controller {
 			'account_number' => $this->input->post("account_number")
 		);
 		$this->project->register_ptg($photographer, $ptg_address, $ptg_electronicdevice, $ptg_social, $payment);
+		echo "<script language='JavaScript'>";
+        echo "alert('ลงทะเบียนสำเสร็จ')";
+        echo "</script>";
 		$this->load->view('header');
 		$this->load->view('login_ptg');
 		$this->load->view('footer');

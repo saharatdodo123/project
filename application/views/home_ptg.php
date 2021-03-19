@@ -18,7 +18,6 @@
                       - <?php echo $item->favorite_job5 ?><br>
                       - <?php echo $item->favorite_job6 ?>
                       </p>
-                      <a href="<?php echo $item->message ?>" class="btn btn-outline-primary">ข้อความ</a>
                     </div>
                   </div>
                 </div>

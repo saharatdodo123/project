@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="<?php echo base_url('public'); ?>/history.css">
 </head>
 <body>
-
 <div class="container">
-<br><br>
+<br>
 <h1 class="display-4">ช่างภาพในระบบ</h1>
 <center><hr class="hr1" size = "5" width="45%"></center>
 <br>

@@ -19,59 +19,66 @@
     </div>
     <div class="col-5">
     <br><br>
-    <center><h1>สมัครสมาชิก</h1></center>
-    <hr size = "10">
+    <h1 align="center">สมัครสมาชิก</h1><br>
     <form action="register_add" method="post">
     <div class="row">
-    <div class="col-6 mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Firstname</label>
+    <div class="col-5 mb-3">
+        <label for="exampleFormControlInput1" class="form-label">ชื่อ</label>
         <input type="text" name="cus_firstname" class="form-control" id="exampleFormControlInput1" required>
     </div>
-    <div class="col-6 mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Lastname</label>
+    <div class="col-5 mb-3">
+        <label for="exampleFormControlInput1" class="form-label">นามสกุล</label>
         <input type="text" name="cus_lastname" class="form-control" id="exampleFormControlInput1" required>
+    </div>
+    <div class="col-2 mb-3">
+        <label for="exampleFormControlInput1" class="form-label">ชาย</label>
+        <select class="form-select" id="inputGroupSelect01" name="cus_sex" required>
+            <option selected>Choose...</option>
+            <option value="ชาย">ชาย</option>
+            <option value="หญิง">หญิง</option>
+        </select>
+    </div>
     </div>
     <div class="row">
     <div class="col-4 mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <label for="exampleFormControlInput1" class="form-label">อีเมล์</label>
         <input type="email" name="cus_email" class="form-control" id="exampleFormControlInput1" required>
     </div>
     <div class="col-4 mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Password</label>
+        <label for="exampleFormControlInput1" class="form-label">พาสเวิร์ด</label>
         <input type="password" name="cus_password" class="form-control" id="exampleFormControlInput1" required>
     </div>
     <div class="col-4 mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Phone</label>
+        <label for="exampleFormControlInput1" class="form-label">เบอร์โทรศัพท์</label>
         <input type="number" name="cus_phone" class="form-control" id="exampleFormControlInput1" required>
     </div>
     </div>
     <div class="row">
-    <h5>Address :</h5>
+    <h5>ที่อยู่ :</h5>
     <div class="col-4 mb-3">
-        <label for="exampleFormControlInput1" class="form-label">House number</label>
+        <label for="exampleFormControlInput1" class="form-label">บ้านเลขที่</label>
         <input type="text" name="cus_house_number" class="form-control" id="exampleFormControlInput1" required>
     </div>
     <div class="col-8 mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Canton</label>
+        <label for="exampleFormControlInput1" class="form-label">ตำบล</label>
         <input type="text" name="cus_canton" class="form-control" id="exampleFormControlInput1" required>
     </div>
     </div>
     <div class="row">
     <div class="col-5 mb-3">
-        <label for="exampleFormControlInput1" class="form-label">District</label>
+        <label for="exampleFormControlInput1" class="form-label">อำเภอ</label>
         <input type="text" name="cus_district" class="form-control" id="exampleFormControlInput1" required>
     </div>
     <div class="col-5 mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Province</label>
+        <label for="exampleFormControlInput1" class="form-label">จังหวัด</label>
         <input type="text" name="cus_province" class="form-control" id="exampleFormControlInput1" required>
     </div>
     <div class="col-2 mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Postal_code</label>
+        <label for="exampleFormControlInput1" class="form-label">รหัสไปรษณีย์</label>
         <input type="number" name="cus_postal_code" class="form-control" id="exampleFormControlInput1" required>
     </div>
     </div>
-        <hr size = "10">
-        <center>
+        <center><br>
         <button type="submit" class="btn btn-primary btn-lg" name="submit">ยืนยัน</button>
         </center>
     </form>

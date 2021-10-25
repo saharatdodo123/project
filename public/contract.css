@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+#his {
+    margin-top: 30px;
+}
